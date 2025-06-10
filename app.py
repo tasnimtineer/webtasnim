@@ -1,10 +1,5 @@
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template("index.html")
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+from flask import Flask
+app = Flask(name)
+@app.route('/') def home(): return "اهلا وسهلا بك في صفحه تسنيم احمد وهنا بعض المعلومات عني اما احب القراءه جدا لدرجه يمكنني قراءه كتاب كامل خلال ثلاث ايام فقط وايضا احب البرمجه زكتابه الاكواد انه شغفي الجديد
+كل فترة يظهر لي شغف بامر جديد متحمسه لهذه الفترة من حياتي ومتشوقة للقادم"
+if name == 'main': app.run()
