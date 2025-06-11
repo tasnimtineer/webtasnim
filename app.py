@@ -2,12 +2,18 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return "Hello to my world Let's go on a little tour and learn more about me!
-I love reading books and can finish a whole book in just three days.
-I'm passionate about programming and enjoy growth and trying new things.
-I'm brave and always try to face challenges, even when I'm afraid.!"
+    return """
+    <html>
+    <head><title>صفحتي الشخصية</title></head>
+    <body>
+        <h1>أهلا وسهلا في صفحتي</h1>
+        <p>هيا بنا في جولة ومعلومات حولي.</p>
+        <p>اسمي تسنيم وأنا أحب البرمجة وأحب المرحلة الحياتية التي أنا فيها لأن كل يوم شيء جديد!</p>
+    </body>
+    </html>
+    """
 
-if __name__ == '_main_':
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
