@@ -7,7 +7,7 @@ def about():
     return """
     <html>
     <head>
-        <title>من نحن</title>
+        <title>Spark Group</title>
         <style>
             body {
                 font-family: 'Arial', sans-serif;
